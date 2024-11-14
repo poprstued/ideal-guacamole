@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>licznik czegos nwm</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
@@ -11,12 +11,13 @@
 <body>
     <script>
 const text = (prompt('wprowadz tekst'));
+const number = parseInt(prompt('ktora w kolejnosci litera cie interesuje'));
 
-document.write('liczba znakow w tekscie to: ',(text.length),);
-if (text.length > 4) {
-document.write('<br> 5 znak to: ',(text.charAt(4)),);
+document.write('<center> liczba znakow w tekscie to: '+ text.length +'<center');
+if (text.length > number) {
+document.write('<center><br>' + number + ' znak to: '+ text.charAt(number) +'<center>');
 } else{
-    document.write('<br> 5 znak to: tekst nie ma 5 litery ')
+    document.write('<center><br> tekst nie ma '+ number +' liter <center>');
 }
 
     </script>
