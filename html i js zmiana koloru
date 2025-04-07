@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js' defer></script>
+</head>
+<body>
+    <header>
+    <h1>siema</h1>
+</header>
+<label for="changetitleinp">
+</label> wpisz nowy tytuł
+<input type="tytuł"
+id="changetitleinp">
+</label><br>
+
+<label for="changecolorinp">wybierz kolor
+    <input type="kolor"
+    id="changecolorinp">
+</label><br>
+    <center><button>zatwierdz</button>
+</body>
+</html>
+
+
+
+JS
+
+
+const mainTitle = document.querySelector('h1')
+const changecolor = document.querySelector('#changecolorinp')
+const btn = document.querySelector('button')
+const title =document.querySelector ('changetitleinp')
+
+function changeColor(kolor){
+    mainTitle.style.color = kolor
+}
+
+function changetitle(tytuł){
+    title.textContent = tytuł
+
+}
+
+btn.addEventListener('click', function(){
+    changeColor(changecolorinp.value)
+    this.style.backgroundColor = '#35f'
+    changetitle(changetitleinp.value)
+})
+
+
+
+
+
+
+
+
+
+
